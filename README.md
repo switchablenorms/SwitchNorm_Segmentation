@@ -115,7 +115,7 @@ Optional arguments (see full input arguments via `./eval.py`):
 
 The experiment results are on the ADE20K validation set. MS test is short for multi-scale test. `sync BN` indicates the mutli-GPU synchronization batch normalization. More results and models will be released soon. 
 
-|     Architecture      |  Norm   |   MS test  | Mean IoU |  Pixel ACC. |  Overall Score  | Download |
+|     Architecture      |  Norm   |   MS test  | Mean IoU |  Pixel Acc. |  Overall Score  | Download |
 | :---:         |  :---:  |  :---:      |  :---:  |  :---:  |  :---:  |  :---:  |  
 | ResNet50_dilated8 + c1_bilinear_deepsup| sync BN | no | 36.43 | 77.30 | 56.87 | [encoder](https://drive.google.com/file/d/1T0IAGpM1qIuT_74VGfuHyQ4QzYU3j55C/view?usp=sharing)  [decoder](https://drive.google.com/file/d/1fvrmSDQb58WHbUu-Ev15kidcaf7VwaFr/view?usp=sharing)  |
 | ResNet50_dilated8 + c1_bilinear_deepsup| GN      | no | 35.66 | 77.24 | 56.45 | [encoder](https://drive.google.com/file/d/1YoXrwvfYzsHQ4P3IyVF2iThWzQtaTbGR/view?usp=sharing)  [decoder](https://drive.google.com/file/d/1HbuyhIiS3fPvBnHYG5xFRwj5Gpv5ULzT/view?usp=sharing)
