@@ -116,14 +116,14 @@ Optional arguments (see full input arguments via `./eval.py`):
 The experiment results are on the ADE20K validation set. MS test is short for multi-scale test. `sync BN` indicates the mutli-GPU synchronization batch normalization. More results and models will be released soon. 
 
 |     Architecture      |  Norm   |   MS test  | Mean IoU |  Pixel ACC. |  Overall Score  | Download |
-| :---:         |  :---:  |  :---:      |  :---:  |  :---:  |  :---:  |  :---  |  
-| ResNet50_dilated8 + c1_bilinear_deepsup| sync BN | no | 36.43 | 77.30 | 56.87 | [encoder](https://drive.google.com/file/d/1T0IAGpM1qIuT_74VGfuHyQ4QzYU3j55C/view?usp=sharing) &#124; [decoder](https://drive.google.com/file/d/1fvrmSDQb58WHbUu-Ev15kidcaf7VwaFr/view?usp=sharing)  |
-| ResNet50_dilated8 + c1_bilinear_deepsup| GN      | no | 35.66 | 77.24 | 56.45 | [encoder](https://drive.google.com/file/d/1YoXrwvfYzsHQ4P3IyVF2iThWzQtaTbGR/view?usp=sharing) &#124; [decoder](https://drive.google.com/file/d/1HbuyhIiS3fPvBnHYG5xFRwj5Gpv5ULzT/view?usp=sharing)
-| ResNet50_dilated8 + c1_bilinear_deepsup| SN-(8,2)| no | 38.72 | 78.90 | 58.82 | [encoder](https://drive.google.com/file/d/1Dn15_QTjdzX1pK3nvXHnHy94V7ffcKjL/view?usp=sharing) &#124;  [decoder](https://drive.google.com/file/d/1wS0lV9hWIBwWQ-Bhvdc1IRFyw3O_Fegx/view?usp=sharing) |
+| :---:         |  :---:  |  :---:      |  :---:  |  :---:  |  :---:  |  :---:  |  
+| ResNet50_dilated8 + c1_bilinear_deepsup| sync BN | no | 36.43 | 77.30 | 56.87 | [encoder](https://drive.google.com/file/d/1T0IAGpM1qIuT_74VGfuHyQ4QzYU3j55C/view?usp=sharing)  [decoder](https://drive.google.com/file/d/1fvrmSDQb58WHbUu-Ev15kidcaf7VwaFr/view?usp=sharing)  |
+| ResNet50_dilated8 + c1_bilinear_deepsup| GN      | no | 35.66 | 77.24 | 56.45 | [encoder](https://drive.google.com/file/d/1YoXrwvfYzsHQ4P3IyVF2iThWzQtaTbGR/view?usp=sharing)  [decoder](https://drive.google.com/file/d/1HbuyhIiS3fPvBnHYG5xFRwj5Gpv5ULzT/view?usp=sharing)
+| ResNet50_dilated8 + c1_bilinear_deepsup| SN-(8,2)| no | 38.72 | 78.90 | 58.82 | [encoder](https://drive.google.com/file/d/1Dn15_QTjdzX1pK3nvXHnHy94V7ffcKjL/view?usp=sharing)   [decoder](https://drive.google.com/file/d/1wS0lV9hWIBwWQ-Bhvdc1IRFyw3O_Fegx/view?usp=sharing) |
 |||||
-| ResNet50_dilated8 + c1_bilinear_deepsup| sync BN | yes | 37.69 | 78.29 | 57.99 | ----- |
-| ResNet50_dilated8 + c1_bilinear_deepsup| GN      | yes | 36.32 | 77.77 | 57.05 | ----- |
-| ResNet50_dilated8 + c1_bilinear_deepsup| SN-(8,2)| yes | 39.21 | 79.20 | 59.21 | ----- |
+| ResNet50_dilated8 + c1_bilinear_deepsup| sync BN | yes | 37.69 | 78.29 | 57.99 | -- |
+| ResNet50_dilated8 + c1_bilinear_deepsup| GN      | yes | 36.32 | 77.77 | 57.05 | -- |
+| ResNet50_dilated8 + c1_bilinear_deepsup| SN-(8,2)| yes | 39.21 | 79.20 | 59.21 | -- |
 
 
 **NOTE:** For all settings in this repo, we employ ResNet as the backbone network, using the original 7×7 kernel size in the first convolution layer. This is different from the [MIT framework](https://github.com/CSAILVision/semantic-segmentation-pytorch) , which adopts 3 convolution layers with the kernel size 3×3 at the bottom of the network. See  `./models/resnet_v1_sn.py` for the details.
