@@ -5,7 +5,7 @@
 This repository contains the code of using Swithable Normalization (SN) in semantic image segmentation, proposed by the paper 
 ["Differentiable Learning-to-Normalize via Switchable Normalization"](https://arxiv.org/abs/1806.10779).
 
-This is a re-implementation of the experiments presented in the above paper by using open-source semantic segmentation framework [Scene Parsing on MIT ADE20K](https://github.com/CSAILVision/semantic-segmentation-pytorch).
+This is the implementations of the experiments presented in the above paper by using open-source semantic segmentation framework [Scene Parsing on MIT ADE20K](https://github.com/CSAILVision/semantic-segmentation-pytorch).
 
 ## Update
 
